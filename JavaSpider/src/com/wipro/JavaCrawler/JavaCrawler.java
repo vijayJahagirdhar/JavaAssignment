@@ -11,7 +11,7 @@ public class JavaCrawler {
 
 	public static void main(String[] args) throws IOException {
 		String url = "http://wiprodigital.com";
-		Document doc=documentParser("http://wiprodigital.com");
+		Document doc=documentParser(url);
 		if(doc!=null) {
 			htmlParser(doc);
 		}
